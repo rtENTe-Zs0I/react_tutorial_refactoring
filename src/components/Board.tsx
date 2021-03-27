@@ -7,7 +7,7 @@ interface BoardProps {
     onClick: (i: number) => void; 
 }
 
-// ==== function conponent without props
+// ==== function component without props
 const Board: React.FC<BoardProps> = ({squares, onClick}) => {
     const renderSquare = (i: number) => {
         return (
@@ -38,7 +38,7 @@ const Board: React.FC<BoardProps> = ({squares, onClick}) => {
       );
 }
 
-// ==== Function conponent with using props ====
+// ==== Function component with using props ====
 // function Board(props: BoardProps){
 //     const renderSquare = (i: number) => {
 //         return (
@@ -70,7 +70,7 @@ const Board: React.FC<BoardProps> = ({squares, onClick}) => {
 // }
 
 
-// ==== class conponent ====
+// ==== class component ====
 // class Board extends React.Component<BoardProps> {
 //     renderSquare(i: number) {
 //       return (

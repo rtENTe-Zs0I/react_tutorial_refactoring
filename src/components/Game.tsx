@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {ISquare, History} from '../interface';
 import Board from './Board';
 
+// ==== Function Conponent ====
 const Game: React.FC = () => {
     const [history, setHistory] = useState<History[]>([{ squares: Array(9).fill(null)}]);
     const [stepNumber, setStepnumber] = useState<number>(0);
@@ -55,6 +56,7 @@ const Game: React.FC = () => {
     );
 }
 
+// ==== Class Component ====
 // interface GameState {
 //     history: History[];
 //     stepNumber: number;

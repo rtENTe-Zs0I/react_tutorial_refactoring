@@ -6,7 +6,7 @@ interface SquareProps {
     onClick: () => void;
 }
 
-// ==== React.FC format conponent without props ====
+// ==== React.FC format component without props ====
 const Square: React.FC<SquareProps> = ({value, onClick}) => {
     return (
         <button className="square" onClick={onClick}>
@@ -15,7 +15,7 @@ const Square: React.FC<SquareProps> = ({value, onClick}) => {
     );
 }
 
-// ==== React.FC format conponent with using props ====
+// ==== React.FC format component with using props ====
 // const Square: React.FC<SquareProps> = (props) => {
 //     return (
 //         <button className="square" onClick={props.onClick}>
@@ -24,7 +24,7 @@ const Square: React.FC<SquareProps> = ({value, onClick}) => {
 //     );
 // }
 
-// ==== Function Conponent ====
+// ==== Function Component ====
 // function Square(props: SquareProps) {
 //   return (
 //     <button className="square" onClick={props.onClick}>
